@@ -72,33 +72,54 @@ const About = ({ contact }: Props) => {
             </div>
             
             <div className="bg-gradient-to-r from-card via-card/80 to-card p-8 rounded-2xl border border-border/50 backdrop-blur-sm">
-              <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center">
-                <div className="w-4 h-4 bg-primary rounded-full mr-3"></div>
-                Our Mission
-              </h3>
-              <p className="text-muted-foreground leading-relaxed text-lg mb-6">
-                To bridge the gap between high-quality health product manufacturers and global 
-                businesses, providing seamless trade solutions with transparency, reliability, 
-                and competitive pricing in the wellness industry.
-              </p>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3">Our Commitment</h4>
-                  <ul className="space-y-2 text-muted-foreground text-sm">
-                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>Transparent pricing with no hidden fees</li>
-                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>Reliable communication in English and Chinese</li>
-                  </ul>
+                <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center">
+                    <div className="w-4 h-4 bg-primary rounded-full mr-3"></div>
+                    Our Mission
+                </h3>
+                <p className="text-muted-foreground leading-relaxed text-lg mb-6">
+                    To connect global businesses with trusted health product manufacturers, ensuring access to 
+                    authentic wellness solutions, streamlined procurement, and transparent trade practices that 
+                    prioritize quality, safety, and affordability in the healthcare industry.
+                </p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                    <h4 className="font-semibold text-foreground mb-3">Our Commitment</h4>
+                    <ul className="space-y-2 text-muted-foreground text-sm">
+                        <li className="flex items-center">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                        Transparent pricing with no hidden costs
+                        </li>
+                        <li className="flex items-center">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                        Clear and reliable communication for global partners
+                        </li>
+                        <li className="flex items-center">
+                        <div className="w-1.5 h-1.5 bg-primary rounded-full mr-3"></div>
+                        Focused on safety and product authenticity
+                        </li>
+                    </ul>
+                    </div>
+                    <div>
+                    <h4 className="font-semibold text-foreground mb-3">Our Services</h4>
+                    <ul className="space-y-2 text-muted-foreground text-sm">
+                        <li className="flex items-center">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>
+                        Custom packaging & private labeling for health brands
+                        </li>
+                        <li className="flex items-center">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>
+                        Competitive bulk pricing for clinics and wellness retailers
+                        </li>
+                        <li className="flex items-center">
+                        <div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>
+                        End-to-end logistics for seamless health product supply
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-                <div>
-                  <h4 className="font-semibold text-foreground mb-3">Our Services</h4>
-                  <ul className="space-y-2 text-muted-foreground text-sm">
-                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>Custom packaging and branding options</li>
-                    <li className="flex items-center"><div className="w-1.5 h-1.5 bg-accent rounded-full mr-3"></div>Competitive wholesale rates for bulk orders</li>
-                  </ul>
-                </div>
-              </div>
             </div>
+
           </div>
 
           {/* Seller Card */}

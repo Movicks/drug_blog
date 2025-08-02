@@ -35,13 +35,13 @@ const Hero = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Premium Health Products
-            <span className="block text-secondary">Direct from Source</span>
+            Premium Health Solutions
+            <span className="block text-secondary">Direct from Trusted Sources</span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Connect directly with quality Chinese manufacturers. Electronics, gadgets, 
-            fashion, and homeware - all at competitive wholesale prices with reliable logistics.
+            Access authentic wellness products, herbal remedies, supplements, and medical supplies 
+            directly from verified manufacturers. Empowering better health through quality and affordability.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -57,7 +57,7 @@ const Hero = () => {
               variant="outline"
               className="bg-white/10 text-white border-white/30 hover:bg-white/20 px-8 py-4 rounded-lg font-semibold backdrop-blur-sm"
             >
-              Contact Seller
+              Contact Supplier
             </Button>
           </div>
 
@@ -65,18 +65,18 @@ const Hero = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             <div className="flex flex-col items-center text-white/90 animate-float">
               <Globe className="h-12 w-12 mb-4 text-secondary" />
-              <h3 className="text-lg font-semibold mb-2">Global Shipping</h3>
-              <p className="text-sm">Worldwide delivery with tracking</p>
+              <h3 className="text-lg font-semibold mb-2">Global Reach</h3>
+              <p className="text-sm">Delivering health products worldwide</p>
             </div>
             <div className="flex flex-col items-center text-white/90 animate-float" style={{animationDelay: '0.5s'}}>
               <Shield className="h-12 w-12 mb-4 text-secondary" />
-              <h3 className="text-lg font-semibold mb-2">Quality Assured</h3>
-              <p className="text-sm">Verified suppliers and products</p>
+              <h3 className="text-lg font-semibold mb-2">Certified Quality</h3>
+              <p className="text-sm">Strictly tested and verified products</p>
             </div>
             <div className="flex flex-col items-center text-white/90 animate-float" style={{animationDelay: '1s'}}>
               <Truck className="h-12 w-12 mb-4 text-secondary" />
-              <h3 className="text-lg font-semibold mb-2">Fast Logistics</h3>
-              <p className="text-sm">Efficient supply chain management</p>
+              <h3 className="text-lg font-semibold mb-2">Reliable Delivery</h3>
+              <p className="text-sm">Fast and safe logistics for your health needs</p>
             </div>
           </div>
         </div>
