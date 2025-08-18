@@ -45,7 +45,7 @@ const ProductCard = ({
   };
 
   return (
-    <div className="product-card group">
+    <div className="product-card group md:h-[26.7rem] flex flex-col justify-between">
       {/* Product Image */}
       <div className="relative overflow-hidden rounded-lg mb-3">
         <Image
@@ -82,7 +82,7 @@ const ProductCard = ({
         </p>
 
         <div className="flex items-center justify-between pt-1">
-          <span className="text-lg font-bold text-primary">{typeof price === 'number' ? `$${price}` : price}</span>
+          <span className="text-lg font-bold text-primary">{typeof price === 'number' ? `₦${price}` : price}</span>
         </div>
 
         {/* Action Buttons */}

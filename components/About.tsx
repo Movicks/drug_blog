@@ -26,7 +26,7 @@ const About = ({ contact }: Props) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            About ChinalinkTrade
+            About Felo.ng
           </h2>
           <div className="w-24 h-1 bg-gradient-from-primary-to-secondary mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
@@ -36,8 +36,8 @@ const About = ({ contact }: Props) => {
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 md:gap-8 items-start">
           {/* Main Content */}
-          <div className="lg:col-span-2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="lg:col-span-4 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 min-w-full">
               <div className="bg-card-gradient-red p-6 rounded-2xl border border-primary/10 hover:shadow-lg transition-all duration-300">
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
                   <Award className="h-6 w-6 text-primary" />
@@ -67,7 +67,7 @@ const About = ({ contact }: Props) => {
                   <MapPin className="h-6 w-6 text-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">Strategic Location</h3>
-                <p className="text-muted-foreground">Based in Guangzhou, China's trade hub</p>
+                <p className="text-muted-foreground">Based in {contact.officeLocation}</p>
               </div>
             </div>
             
@@ -123,7 +123,7 @@ const About = ({ contact }: Props) => {
           </div>
 
           {/* Seller Card */}
-          <div className="lg:col-span-1">
+          {/* <div className="lg:col-span-1">
             <div className="bg-gradient-to-br from-card via-card/90 to-card/80 p-6 rounded-2xl border border-border/50 backdrop-blur-sm sticky top-8">
               <div className="text-center mb-6">
                 <Image 
@@ -161,7 +161,7 @@ const About = ({ contact }: Props) => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@ export default async function Home() {
   const products = await getHealthProducts();
   return (
     <div className="min-h-screen bg-background">
-      <Navigation />
+      <Navigation contact={contact}/>
       <Hero />
       <ProductGallery contact={contact} products={products}/>
       <About contact={contact}/>

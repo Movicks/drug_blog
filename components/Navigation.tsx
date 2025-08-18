@@ -4,7 +4,26 @@ import { useState, useEffect } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import { Button } from './ui/button';
 
-const Navigation = () => {
+
+type Contact = {
+  _id: string;
+  fullName: string;
+  position: string;
+  officeLocation: string;
+  email: string;
+  phoneNumber: string;
+  whatsappNumber: string;
+  clients: number;
+  yearsOfExperience: number;
+  profileImage: string;
+};
+
+
+type Props = {
+  contact: Contact;
+};
+
+const Navigation = ({ contact }: Props) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -38,10 +57,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center h-16 relative z-10">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className={`text-2xl font-bold transition-colors ${
+            <h1 className={`text-2xl lg:text-4xl font-bold transition-colors ${
               isScrolled ? 'text-primary' : 'text-secondary'
             } ${isMenuOpen ? 'text-primary' : ''}`}>
-              ChinalinkTrade
+              Felo.ng
             </h1>
           </div>
 
@@ -94,7 +113,7 @@ const Navigation = () => {
           {/* Quick Contact */}
           <div className="hidden md:flex items-center space-x-4">
             <a
-              href="tel:+8613800138000"
+              href={`tel:${contact.phoneNumber}`}
               className={`transition-colors ${
                 isScrolled 
                   ? 'text-primary hover:text-primary/80' 
@@ -105,7 +124,7 @@ const Navigation = () => {
               <Phone size={20} />
             </a>
             <a
-              href="mailto:sales@chinalinktrade.com"
+              href={`mailto:${contact.email}`}
               className={`transition-colors ${
                 isScrolled 
                   ? 'text-accent hover:text-accent/80' 
@@ -165,14 +184,14 @@ const Navigation = () => {
               </button>
               <div className="flex space-x-4 px-3 py-2">
                 <a
-                  href="tel:+8613800138000"
+                  href={`tel:${contact.phoneNumber}`}
                   className="text-primary hover:text-primary/80 transition-colors"
                   aria-label="Call us"
                 >
                   <Phone size={20} />
                 </a>
                 <a
-                  href="mailto:sales@chinalinktrade.com"
+                  href={`mailto:${contact.email}`}
                   className="text-accent hover:text-accent/80 transition-colors"
                   aria-label="Email us"
                 >
