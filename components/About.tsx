@@ -37,7 +37,7 @@ const About = ({ contact }: Props) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 md:gap-8 items-start">
           {/* Main Content */}
           <div className="lg:col-span-4 w-full">
-            <div className="flex flex-wrap justify-center gap-8 mb-8 min-w-full">
+            <div className="flex flex-wrap justify-center gap-3 md:gap-6 mb-8 min-w-full">
               <div className="bg-card-gradient-red p-6 rounded-2xl border border-primary/10 hover:shadow-lg transition-all duration-300 lg:w-[30rem]">
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
                   <Award className="h-6 w-6 text-primary" />
