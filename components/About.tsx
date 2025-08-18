@@ -37,8 +37,8 @@ const About = ({ contact }: Props) => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 md:gap-8 items-start">
           {/* Main Content */}
           <div className="lg:col-span-4 w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8 min-w-full">
-              <div className="bg-card-gradient-red p-6 rounded-2xl border border-primary/10 hover:shadow-lg transition-all duration-300">
+            <div className="flex flex-wrap justify-center gap-8 mb-8 min-w-full">
+              <div className="bg-card-gradient-red p-6 rounded-2xl border border-primary/10 hover:shadow-lg transition-all duration-300 lg:w-[30rem]">
                 <div className="w-12 h-12 bg-primary/20 rounded-xl flex items-center justify-center mb-4">
                   <Award className="h-6 w-6 text-primary" />
                 </div>
@@ -46,7 +46,7 @@ const About = ({ contact }: Props) => {
                 <p className="text-muted-foreground">Rigorous quality control and health compliance testing for all products</p>
               </div>
               
-              <div className="bg-card-gradient-accent p-6 rounded-2xl border border-accent/10 hover:shadow-lg transition-all duration-300">
+              <div className="bg-card-gradient-accent p-6 rounded-2xl border border-accent/10 hover:shadow-lg transition-all duration-300 lg:w-[30rem]">
                 <div className="w-12 h-12 bg-accent/20 rounded-xl flex items-center justify-center mb-4">
                   <Users className="h-6 w-6 text-accent" />
                 </div>
@@ -54,7 +54,7 @@ const About = ({ contact }: Props) => {
                 <p className="text-muted-foreground">Extensive wellness supplier connections worldwide</p>
               </div>
               
-              <div className="bg-card-gradient-secondary p-6 rounded-2xl border border-secondary/10 hover:shadow-lg transition-all duration-300">
+              <div className="bg-card-gradient-secondary p-6 rounded-2xl border border-secondary/10 hover:shadow-lg transition-all duration-300 lg:w-[30rem]">
                 <div className="w-12 h-12 bg-secondary/20 rounded-xl flex items-center justify-center mb-4">
                   <Clock className="h-6 w-6 text-secondary" />
                 </div>
@@ -62,16 +62,16 @@ const About = ({ contact }: Props) => {
                 <p className="text-muted-foreground">Quick processing and secure delivery</p>
               </div>
               
-              <div className="bg-card-gradient-muted p-6 rounded-2xl border border-muted/20 hover:shadow-lg transition-all duration-300">
+              {/* <div className="bg-card-gradient-muted p-6 rounded-2xl border border-muted/20 hover:shadow-lg transition-all duration-300">
                 <div className="w-12 h-12 bg-muted/30 rounded-xl flex items-center justify-center mb-4">
                   <MapPin className="h-6 w-6 text-foreground" />
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-3">Strategic Location</h3>
                 <p className="text-muted-foreground">Based in {contact.officeLocation}</p>
-              </div>
+              </div> */}
             </div>
             
-            <div className="bg-gradient-to-r from-card via-card/80 to-card p-8 rounded-2xl border border-border/50 backdrop-blur-sm">
+            {/* <div className="bg-gradient-to-r from-card via-card/80 to-card p-8 rounded-2xl border border-border/50 backdrop-blur-sm">
                 <h3 className="text-2xl font-semibold text-foreground mb-6 flex items-center">
                     <div className="w-4 h-4 bg-primary rounded-full mr-3"></div>
                     Our Mission
@@ -118,7 +118,7 @@ const About = ({ contact }: Props) => {
                     </ul>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
           </div>
 

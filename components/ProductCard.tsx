@@ -81,9 +81,9 @@ const ProductCard = ({
           {description}
         </p>
 
-        <div className="flex items-center justify-between pt-1">
+        {/* <div className="flex items-center justify-between pt-1">
           <span className="text-lg font-bold text-primary">{typeof price === 'number' ? `₦${price}` : price}</span>
-        </div>
+        </div> */}
 
         {/* Action Buttons */}
         <div className="flex space-x-2 pt-3">
