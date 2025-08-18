@@ -24,7 +24,7 @@ const Footer = ({ contact }: Props) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-8">
           <div className="text-center mb-6">
-            <h3 className="text-xl font-bold text-primary mb-2">ChinalinkTrade</h3>
+            <h3 className="text-xl font-bold text-primary mb-2">Felo.ng</h3>
             <p className="text-background/80 text-sm max-w-md mx-auto">
               Your trusted partner for premium health products worldwide.
             </p>
