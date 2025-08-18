@@ -58,7 +58,7 @@ const Footer = ({ contact }: Props) => {
           
           <div className="border-t border-background/20 pt-4 text-center">
             <p className="text-background/60 text-xs">
-              © {currentYear} ChinalinkTrade. All rights reserved.
+              © {currentYear} Felo.ng. All rights reserved.
             </p>
           </div>
         </div>
