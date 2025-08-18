@@ -32,7 +32,7 @@ const Footer = ({ contact }: Props) => {
           
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-6">
             <a 
-              href="tel:+8613800138000"
+              href={`tel:${contact.phoneNumber}`}
               className="text-primary hover:text-primary/80 transition-colors flex items-center space-x-2 text-sm"
             >
               <Phone size={16} />
@@ -40,7 +40,7 @@ const Footer = ({ contact }: Props) => {
               <span className="sm:hidden">Call</span>
             </a>
             <a 
-              href="mailto:sales@chinalinktrade.com"
+              href={`mailto:${contact.email}`}
               className="text-secondary hover:text-secondary/80 transition-colors flex items-center space-x-2 text-sm"
             >
               <Mail size={16} />

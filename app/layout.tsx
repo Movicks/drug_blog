@@ -15,6 +15,22 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Felo.ng",
   description: "Premium Health Products at cheap prices",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://felo.ng",
+    title: "Felo.ng",
+    description: "Premium Health Products at cheap prices",
+    images: [
+      {
+        url: "https://felo.ng/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Felo.ng",
+      },
+    ],
+    siteName: "Felo.ng", // ✅ Correct property
+  },
 };
 
 export default function RootLayout({
