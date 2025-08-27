@@ -79,14 +79,14 @@ const Contact = ({ contact }: Props) => {
               <p className="text-lg font-medium text-secondary">{contact.whatsappNumber}</p>
             </div>
 
-            <div className="bg-card-gradient-muted p-8 rounded-2xl border border-border hover:shadow-xl transition-all duration-300">
+            {/* <div className="bg-card-gradient-muted p-8 rounded-2xl border border-border hover:shadow-xl transition-all duration-300">
               <div className="w-16 h-16 bg-muted/30 rounded-2xl flex items-center justify-center mb-6">
                 <MapPin className="h-8 w-8 text-foreground" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3">Office Location</h3>
               <p className="text-muted-foreground mb-4">Schedule a visit to discuss bulk orders</p>
               <p className="text-lg font-medium text-foreground">{contact.officeLocation}</p>
-            </div>
+            </div> */}
           </div>
 
           {/* Quick Action Panel */}
