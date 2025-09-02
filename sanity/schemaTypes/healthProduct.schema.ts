@@ -74,6 +74,34 @@ export const healthProduct = defineType({
       of: [{ type: 'string' }],
       options: { layout: 'tags' },
     }),
+    defineField({
+      name: 'mainIngredients',
+      title: 'Main Ingredients',
+      type: 'text',
+      rows: 3,
+      description: 'List the main active ingredients in this product',
+    }),
+    defineField({
+      name: 'suitableFor',
+      title: 'Suitable For',
+      type: 'text',
+      rows: 2,
+      description: 'Who is this product suitable for? (e.g., adults, children, specific conditions)',
+    }),
+    defineField({
+      name: 'suggestedUsage',
+      title: 'Suggested Usage',
+      type: 'text',
+      rows: 3,
+      description: 'How to use this product (dosage, frequency, instructions)',
+    }),
+    defineField({
+      name: 'specification',
+      title: 'Specification',
+      type: 'text',
+      rows: 4,
+      description: 'Technical specifications, dimensions, or other product details',
+    }),
   ],
   preview: {
     select: {

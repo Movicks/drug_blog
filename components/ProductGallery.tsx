@@ -52,7 +52,7 @@ const ProductGallery = ({ contact, products }: Props) => {
             Featured Products
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover our carefully curated selection of premium Chinese products.
+            Discover our carefully curated selection of premium Healthcode products.
             From cutting-edge electronics to innovative gadgets, we offer competitive
             wholesale prices with reliable quality assurance.
           </p>
@@ -65,7 +65,7 @@ const ProductGallery = ({ contact, products }: Props) => {
                 key={product._id}
                 className="w-full sm:w-[calc(50%-1rem)] lg:w-[calc(28.333%-1rem)] animate-slide-up border border-gray-200 rounded-xl"
                 style={{ animationDelay: `${index * 0.1}s` }}
-                >
+                >  
                 <ProductCard {...product} contact={contact} />
                 </div>
             ))}

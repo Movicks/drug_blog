@@ -4,6 +4,7 @@ import { Phone, Mail, Star, Eye } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { urlFor } from './../sanity/lib/image';
+import Link from 'next/link';
 
 type Contact = {
   email: string;
@@ -27,7 +28,6 @@ const ProductCard = ({
   name,
   description,
   image,
-  price,
   rating,
   category,
   contact,
@@ -45,25 +45,28 @@ const ProductCard = ({
   };
 
   return (
-    <div className="product-card group md:h-[26.7rem] flex flex-col justify-between">
+    <div className="product-card group md:h-[33.7rem] flex flex-col justify-between">
       {/* Product Image */}
-      <div className="relative overflow-hidden rounded-lg mb-3">
-        <Image
-          src={urlFor(image)}
-          alt={name}
-          width={100}
-          height={100}
-          className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
-        />
-        <div className="absolute top-3 right-3">
-          <span className="bg-secondary text-secondary-foreground px-2 py-1 rounded-full text-xs font-medium">
-            {category}
-          </span>
+      <Link href={`/products/${_id}`}>
+        <div className="relative overflow-hidden rounded-lg mb-3">
+            <Image
+              src={urlFor(image)}
+              alt={name}
+              width={100}
+              height={100}
+              className="w-full h-78 object-cover transition-transform duration-500 group-hover:scale-110"
+            />
+        
+          <div className="absolute top-3 right-3">
+            <span className="bg-secondary text-secondary-foreground px-2 py-1 rounded-full text-xs font-medium">
+              {category}
+            </span>
+          </div>
+          <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
+            <Eye className="h-8 w-8 text-white" />
+          </div>
         </div>
-        <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100">
-          <Eye className="h-8 w-8 text-white" />
-        </div>
-      </div>
+      </Link>
 
       {/* Product Info */}
       <div className="space-y-2">
@@ -80,10 +83,6 @@ const ProductCard = ({
         <p className="text-muted-foreground text-xs leading-relaxed line-clamp-2">
           {description}
         </p>
-
-        {/* <div className="flex items-center justify-between pt-1">
-          <span className="text-lg font-bold text-primary">{typeof price === 'number' ? `₦${price}` : price}</span>
-        </div> */}
 
         {/* Action Buttons */}
         <div className="flex space-x-2 pt-3">
