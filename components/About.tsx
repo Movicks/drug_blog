@@ -30,7 +30,7 @@ const About = ({ contact }: Props) => {
           </h2>
           <div className="w-24 h-1 bg-gradient-from-primary-to-secondary mx-auto mb-6"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner for premium health products with over 15 years of experience connecting global markets
+            Your trusted partner for premium healthcode products with over 15 years of experience connecting global markets
           </p>
         </div>
         
