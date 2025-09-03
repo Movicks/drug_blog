@@ -21,8 +21,7 @@ export const healthProduct = defineType({
       name: 'description',
       title: 'Product Description',
       type: 'text',
-      rows: 4,
-      validation: (Rule) => Rule.required(),
+      rows: 10,
     }),
     defineField({
       name: 'category',
@@ -46,7 +45,6 @@ export const healthProduct = defineType({
       name: 'price',
       title: 'Price (NGN)',
       type: 'number',
-      validation: (Rule) => Rule.required().min(0),
     }),
     defineField({
       name: 'rating',

@@ -70,7 +70,7 @@ const ProductCard = ({
 
       {/* Product Info */}
       <div className="space-y-2">
-        <div className="flex items-start justify-between">
+        <div className="flex items-start justify-between gap-4">
           <h3 className="text-base font-semibold text-foreground group-hover:text-primary transition-colors">
             {name}
           </h3>

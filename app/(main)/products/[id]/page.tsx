@@ -135,13 +135,13 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Product Image */}
           <div className="space-y-4">
-            <div className="relative overflow-hidden rounded-2xl bg-gray-100">
+            <div className="relative overflow-hidden bg-gray-100">
               <Image
                 src={urlFor(product.image)}
                 alt={product.name}
                 width={600}
                 height={600}
-                className="w-full h-96 lg:h-[500px] object-cover"
+                className="w-full h-96 lg:h-full object-cover"
               />
               {!product.inStock && (
                 <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
@@ -166,7 +166,7 @@ export default function ProductPage({ params }: { params: Promise<{ id: string }
                   <span className="text-sm font-medium text-gray-600">{product.rating}/5</span>
                 </div>
               </div>
-              <h1 className="text-3xl lg:text-4xl font-bold text-foreground leading-tight">
+              <h1 className="text-xl lg:text-3xl font-bold text-foreground leading-tight">
                 {product.name}
               </h1>
             </div>
