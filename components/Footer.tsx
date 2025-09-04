@@ -26,7 +26,7 @@ const Footer = ({ contact }: Props) => {
           <div className="text-center mb-6">
             <h3 className="text-2xl lg:text-4xl font-bold text-primary mb-2">Felo.ng</h3>
             <p className="text-background/80 text-sm max-w-md mx-auto">
-              Your trusted partner for premium Healthcode products worldwide.
+              Your trusted partner for premium healthcode products worldwide.
             </p>
           </div>
           
