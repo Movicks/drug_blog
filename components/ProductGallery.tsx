@@ -52,7 +52,7 @@ const ProductGallery = ({ contact, products }: Props) => {
             Featured Products
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Discover our carefully curated selection of premium Healthcode products.
+            Discover our carefully curated selection of premium healthcode products.
             From cutting-edge electronics to innovative gadgets, we offer competitive
             wholesale prices with reliable quality assurance.
           </p>
