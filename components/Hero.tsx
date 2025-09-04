@@ -36,12 +36,12 @@ const Hero = () => {
         <div className="animate-fade-in">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
             Premium Health Solutions
-            <span className="block text-secondary">Direct from Trusted Sources</span>
+            <span className="block text-secondary">Direct from healthcode</span>
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Access authentic wellness products, herbal remedies, supplements, and medical supplies 
-            directly from verified manufacturers. Empowering better health through quality and affordability.
+            directly from healthcode products. Empowering better health through quality and affordability.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
