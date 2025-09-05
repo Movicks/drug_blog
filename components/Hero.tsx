@@ -41,7 +41,7 @@ const Hero = () => {
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
             Access authentic wellness products, herbal remedies, supplements, and medical supplies 
-            directly from healthcode products. Empowering better health through quality and affordability.
+            directly from healthcode. Empowering better health through quality and affordability.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
